@@ -22,7 +22,7 @@ jobs:
       - image: cimg/python:3.11
     
     steps: 
-      - echo "Practical Done"
+      - run: echo "Practical Done"
 
 workflows:
   build_test_deploy:
@@ -36,4 +36,4 @@ workflows:
             - test
           filters:
             branches:
-              only:main
+              only: main
